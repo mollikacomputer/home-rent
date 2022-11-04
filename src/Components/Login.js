@@ -1,11 +1,56 @@
-import React from 'react';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import LoginImg from '../assets/LoginImg.svg'
 const Login = () => {
-    return (
-        <div>
-            <h2 className='text-3xl' > Login </h2>
+  return (
+    <div>
+      <div className="hero min-h-screen bg-base-200 px-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 hero-content flex-col lg:flex-row-reverse">
+          <div className="text-center lg:text-left">
+            <h1 className="text-5xl font-bold">Login now!</h1>
+            <img src={LoginImg} alt="Album" />
+          </div>
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div className="card-body">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="email"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Password</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="password"
+                  className="input input-bordered"
+                />
+                <label className="label">
+                  <Link href="#" className="label-text-alt link link-hover">
+                    Forgot password?
+                  </Link>
+                </label>
+                <label className="label">
+                  <Link to='/login' className="label-text-alt link link-hover">
+                    New User? Click to Register.
+                  </Link>
+                </label>
+              </div>
+              <div className="form-control mt-6">
+                <button className="btn btn-primary">Login</button>
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Login;

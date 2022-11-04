@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Common/Footer';
 import PublicReactions from '../Common/PublicReactions';
 import Services from '../Common/Services';
 
@@ -10,6 +11,7 @@ const Home = () => {
             <Carousel/>
             <Services/>
             <PublicReactions/>
+            <Footer/>
         </div>
     );
 };
