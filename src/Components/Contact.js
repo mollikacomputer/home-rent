@@ -9,12 +9,12 @@ const Contact = () => {
         </figure>
 
         <div className="">
-          <h2 className="card-title">New album is released!</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            id, eveniet odit aperiam, provident molestias, dicta veritatis est
-            voluptates ex tempore nostrum consequuntur enim maxime
-            exercitationem nulla velit facere illum.
+          <h2 className="text-3xl mb-8">Fell Free Contact Us</h2>
+          <p className="text-2xl">
+           email: info@etshomerent
+          </p>
+          <p className="text-2xl">
+           +96000000 
           </p>
         </div>
       </div>
