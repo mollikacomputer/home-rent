@@ -14,7 +14,7 @@ const Contact = () => {
            email: info@etshomerent
           </p>
           <p className="text-2xl">
-           +96000000 
+          +13187060035 
           </p>
         </div>
       </div>
