@@ -1,12 +1,10 @@
 import React from 'react';
-import Service from '../Service';
-import HomeRentalPic from '../../assets/HomeRental.jpg';
-import PackingToMove from '../../assets/packingToMove.jpg';
-import HomeForSale from '../../assets/HomeForSale.png';
-import { Link } from 'react-router-dom';
-
-const Services = () => {
-    const servicesData = [
+import ShowAllService from './ShowAllService';
+import HomeRentalPic from '../assets/HomeForSale.png';
+import PackingToMove from '../assets/packingToMove.jpg';
+import HomeForSale from '../assets/HomeForSale.png';
+const ShowAllServices = () => {
+    const showAllServiceData = [
         {
             id:1,
             picture:HomeRentalPic,
@@ -26,24 +24,22 @@ const Services = () => {
             description:'This home has gorgeous curb appeal! With a Hardi Plank & stone exterior it is built to last! Open floor plan flows between family room & kitchen! Fireplace for those cool, crisp fall nights! Kitchen has granite, tile backsplash & a center island. Elegant Master Suite with walk-in closet, garden tub & separate shower. Extra large, fenced in backyard with 6 ft privacy fence. 2 Car garage and gutters in front & back. Great family friendly community! Close to Hwy I85 and minutes from everything!, Two story home. Formal Dining Room. Great room with fireplace. Open layout. Walk in closets, garden tub. 4 br, 3 1/2 bath  Appointment Required.'
         }
     ]
-    console.log(servicesData);
     return (
         <div className='bg-base-200 py-16'>
              <h2 className='text-3xl text-primary' > Our Services </h2>
-             <h2 className='text-2xl' > Total Service {servicesData.length} </h2>
+             <h2 className='text-2xl' > Total Service {showAllServiceData.length} </h2>
             <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4" >
                 {
-                    servicesData.map( 
-                    service => <Service 
+                    showAllServiceData.map( 
+                    service => <ShowAllService 
                     key={service.id}
                     service = {service}
                     />
                     )
                 }              
             </div>
-            <h3 className='text-2xl mt-8'> <Link to='/showallservices' > Show All Services </Link>  </h3>
         </div>
     );
 };
 
-export default Services;
+export default ShowAllServices;
