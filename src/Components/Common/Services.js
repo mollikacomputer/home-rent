@@ -6,6 +6,7 @@ import HomeForSale from '../../assets/HomeForSale.png';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
+   
     const servicesData = [
         {
             id:1,

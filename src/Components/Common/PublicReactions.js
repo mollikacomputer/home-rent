@@ -17,7 +17,7 @@ const PublicReactions = () => {
             name:'Mr. Mary Jones',
             location:'Dallas, Texas',
             picture:reactionPic2,
-            description:'Good job and product. Delivery time and management and product is awesome. come back again'
+            description:'Good job. Delivery time and management and product is awesome. come back again'
         },
         {
             id:3,

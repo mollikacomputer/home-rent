@@ -1,12 +1,12 @@
 import React from "react";
 const PublicReaction = (props) => {
-  const { name, description, picture } = props.reaction;
+  const { name, description,location, picture } = props.reaction;
   return (
     <div >
       <div class="card bg-base-100 shadow-xl p-4">
         <div>
           <p className="text-left">
-            Seat Belt is awesome i can buy from again when we need.
+            {description}
           </p>
         </div>
         <div className="flex">
@@ -17,7 +17,7 @@ const PublicReaction = (props) => {
           </div>
           <div class="card-body text-left align-middle">
             <h2 class="card-title"> {name}</h2>
-            <p> Austin, Texas </p>
+            <p> {location} </p>
           </div>
         </div>
       </div>

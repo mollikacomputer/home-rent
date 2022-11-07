@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="">
           <h2 className="text-3xl mb-8">Fell Free Contact Us</h2>
           <p className="text-2xl">
-           email: info@etshomerent
+           email: info@etshomerent.com
           </p>
           <p className="text-2xl">
           +13187060035 
